@@ -1,0 +1,210 @@
+site_name: Python QA Automation
+site_description: Python QA Automation - A primer on automating the web through Python
+site_url: https://pythonqa.org/
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  font:
+    text: Open Sans
+  palette:
+    # Palette toggle for light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/brightness-3
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/brightness-5
+        name: Switch to light mode
+
+  icon:
+    repo: fontawesome/brands/github-alt
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    edit: material/pencil
+  logo: img/icon-white.svg
+  favicon: img/favicon.png
+  features:
+    # - navigation.tabs
+    - navigation.instant
+    - navigation.footer
+    - navigation.tabs.sticky
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+    - content.code.annotate
+
+repo_name: hmurari/pythonqa
+repo_url: https://github.com/hmurari/visionai
+edit_uri: https://github.com/hmurari/visionai/edit/main/docs
+copyright: Copyright &copy; 2023 PythonQA.org
+
+nav:
+  - Preface: index.md
+  - Introduction: introduction.md
+
+  - Python Primer:
+      - Python programming syntax: python/syntax.md
+      - Variables, data types, and operators: python/variables.md
+      - Conditional statements (if/else): python/conditional-statements.md
+      - Loops (for and while): python/loops.md
+      - Functions and modules: python/functions.md
+      - Classes and object-oriented programming: python/classes.md
+      - Introduction to Python unit testing frameworks (PyTest): python/testing.md
+
+  - Selenium:
+      - Introduction: selenium/introduction.md
+      - Locating web elements: selenium/locating-elements.md
+      - Interacting with web elements: selenium/interacting-elements.md
+      - Navigation between pages: selenium/navigation.md
+      - Handling iframes: selenium/iframes.md
+      - Project - Automating Google Search: selenium/google-search.md
+      - Project - Automating a web form: selenium/web-form.md
+
+  - APIs:
+      - Introduction to Web APIs: api/introduction.md
+      - Making API requests using the Requests library: api/requests.md
+      - Handling JSON data in Python: api/json.md
+      - Project - Automating weather data retrieval using OpenWeatherMap API: api/weather.md
+
+  - Web Scraping:
+      - Introduction to web scraping: scraping/introduction.md
+      - Installing and using Beautiful Soup: scraping/installing.md
+      - Navigating HTML and extracting information: scraping/navigating.md
+      - Project - Scraping news headlines from a news website: scraping/news.md
+
+  - Data I/O:
+      - Accepting user input with input() function: input/input.md
+      - Reading and writing files in Python: input/files.md
+      - CSV and JSON Files: input/csv-json.md
+      - Project - Saving and loading test automation data: input/saving-loading.md
+
+  - Test Suites:
+      - Importance of modular and reusable code: test-suites/modular.md
+      - Creating functions and classes for test automation: test-suites/functions-classes.md
+      - Organizing test cases and test suites: test-suites/organizing.md
+      - Project - Building a test suite for an e-commerce website: test-suites/e-commerce.md
+
+  - Best Practices:
+      - Code organization and structure: best-practices/code-organization.md
+      - Writing maintainable and readable code: best-practices/maintainable.md
+      - Error handling and logging: best-practices/error-handling.md
+      - Continuous integration and testing: best-practices/continuous-integration.md
+
+  - Advanced:
+      - Introduction to headless browser testing: advanced/headless.md
+      - Performance testing with Python: advanced/performance-testing.md
+      - Mobile app testing with Appium: advanced/mobile-testing.md
+      - Exploring other Python testing libraries (pytest, unittest, etc.): advanced/other-testing-libraries.md
+
+  - Project:
+      - Designing a complete test automation project: final-project/design.md
+      - Implementing the project using skills learned throughout the book: final-project/implementation.md
+      - Evaluating and improving the test automation process: final-project/evaluation.md
+
+  - Reference:
+      - Author: reference/author.md
+      - Book: reference/book.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: visionify
+      repo: visionai
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+
+extra:
+  analytics:
+    provider: google
+    property: G-3CWR3GL7BF
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfW7NsiBv1KCH8enZ7OJDHdQDhqY8NtUeQElm9gnRRR9pLPbw/viewform?usp=sf_link" target="_blank" rel="noopener">feedback form</a>.
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/hmurari/pythonqa
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/hmurari
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/hmurari
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@hmurari
+    - icon: fontawesome/solid/globe
+      link: https://visionify.ai
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+  - css/hint.min.css
+extra_javascript:
+  - js/termynal.js
+  - js/custom.js
+
+plugins:
+  - search

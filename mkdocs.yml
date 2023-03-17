@@ -62,24 +62,8 @@ copyright: Copyright &copy; 2023 PythonQA.org
 nav:
   - Preface: index.md
   - Introduction: introduction.md
-
-  - Python Primer:
-      - Python programming syntax: python/syntax.md
-      - Variables, data types, and operators: python/variables.md
-      - Conditional statements (if/else): python/conditional-statements.md
-      - Loops (for and while): python/loops.md
-      - Functions and modules: python/functions.md
-      - Classes and object-oriented programming: python/classes.md
-      - Introduction to Python unit testing frameworks (PyTest): python/testing.md
-
-  - Selenium:
-      - Introduction: selenium/introduction.md
-      - Locating web elements: selenium/locating-elements.md
-      - Interacting with web elements: selenium/interacting-elements.md
-      - Navigation between pages: selenium/navigation.md
-      - Handling iframes: selenium/iframes.md
-      - Project - Automating Google Search: selenium/google-search.md
-      - Project - Automating a web form: selenium/web-form.md
+  - Python Primer: python-primer.md
+  - Selenium: selenium.md
 
   - APIs:
       - Introduction to Web APIs: api/introduction.md

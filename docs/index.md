@@ -2,7 +2,7 @@
   <a href="https://pythonqa.org"><img src="https://raw.githubusercontent.com/hmurari/pythonqa/main/docs/img/python-qa-course-banner.jpg" alt="QA Automation through Python - Complete Course"></a>
 </p>
 <p align="center">
-    <em>Python QA automation. Complete Course. </em>
+    <em>Python QA Automation Course </em>
 </p>
 <p align="center">
 <!-- 

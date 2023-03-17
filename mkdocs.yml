@@ -54,8 +54,8 @@ theme:
     - content.tabs.link
     - content.code.annotate
 
-repo_name: hmurari/pythonqa
-repo_url: https://github.com/hmurari/visionai
+# repo_name: hmurari/pythonqa
+# repo_url: https://github.com/hmurari/visionai
 edit_uri: https://github.com/hmurari/visionai/edit/main/docs
 copyright: Copyright &copy; 2023 PythonQA.org
 
@@ -64,14 +64,17 @@ nav:
   - Introduction: introduction.md
   - Python Primer: python-primer.md
   - Selenium: selenium.md
+  - eCommerce Automation: ecommerce-automation.md
+  - Forms Automation: web-forms-automation.md
+  - Social Media Automation: social-media-automation.md
+  - API Automation: api-automation.md
+  - Web Scraping: web-scraping.md
+  - Test suites: test-suites.md
+  - Best Practices: best-practices.md
+  - Advanced: advanced.md
+  - Book: book.md
 
-  - APIs:
-      - Introduction to Web APIs: api/introduction.md
-      - Making API requests using the Requests library: api/requests.md
-      - Handling JSON data in Python: api/json.md
-      - Project - Automating weather data retrieval using OpenWeatherMap API: api/weather.md
-
-  - Web Scraping:
+  - Other:
       - Introduction to web scraping: scraping/introduction.md
       - Installing and using Beautiful Soup: scraping/installing.md
       - Navigating HTML and extracting information: scraping/navigating.md
@@ -181,6 +184,8 @@ extra:
       link: https://medium.com/@hmurari
     - icon: fontawesome/solid/globe
       link: https://visionify.ai
+
+  generator: false
 
 extra_css:
   - css/termynal.css

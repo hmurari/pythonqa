@@ -1,4 +1,4 @@
-# Introduction
+# Chapter 1: Introduction
 
 In this chapter, we will go over the basics of test automation and why Python is an excellent choice for it. We will also introduce popular Python libraries used for test automation, as well as key concepts like web automation, web APIs, and web scraping. Finally, an overview of the book will outline what students can expect to learn in each chapter and the hands-on projects they'll be working on.
 

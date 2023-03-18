@@ -1,4 +1,4 @@
-# A Quick Primer on Python
+# Chapter 2: Python Primer
 
 In this chapter, we aim to provide a quick primer on Python programming to help you get started with test automation. Python is a versatile, high-level programming language known for its readability and simplicity. Its straightforward syntax, extensive library ecosystem, and strong community support make Python an excellent choice for various tasks, including test automation.
 

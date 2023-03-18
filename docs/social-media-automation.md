@@ -1,21 +1,6 @@
 # Chapter 6: Automating Social Media Interaction
 
-In this chapter, we will explore how to automate social media interactions using Python and Selenium WebDriver. By the end of this chapter, you will have a foundational understanding of how to interact with various social media platforms, and you will have completed a project to automate posting a message on a social media site. The chapter is divided into the following sections:
-
-- [Chapter 6: Automating Social Media Interaction](#chapter-6-automating-social-media-interaction)
-  - [6.1 Introduction to Social Media Automation](#61-introduction-to-social-media-automation)
-  - [6.2 Setting Up a Social Media Test Account](#62-setting-up-a-social-media-test-account)
-  - [6.3 Automating Login and Logout on Social Media Platforms](#63-automating-login-and-logout-on-social-media-platforms)
-    - [6.3.1 Automating Login](#631-automating-login)
-    - [6.3.2 Automating Logout](#632-automating-logout)
-  - [6.4 Posting a Message on a Social Media Platform](#64-posting-a-message-on-a-social-media-platform)
-  - [6.5 Liking and Unliking a Post on a Social Media Platform](#65-liking-and-unliking-a-post-on-a-social-media-platform)
-    - [6.5.1 Automating Liking a Post](#651-automating-liking-a-post)
-    - [6.5.2 Automating Unliking a Post](#652-automating-unliking-a-post)
-  - [6.6 Following and Unfollowing Users on a Social Media Platform](#66-following-and-unfollowing-users-on-a-social-media-platform)
-    - [6.6.1 Automating Following a User](#661-automating-following-a-user)
-    - [6.6.2 Automating Unfollowing a User](#662-automating-unfollowing-a-user)
-  - [6.7 Summary](#67-summary)
+In this chapter, we will explore how to automate social media interactions using Python and Selenium WebDriver. By the end of this chapter, you will have a foundational understanding of how to interact with various social media platforms, and you will have completed a project to automate posting a message on a social media site. 
 
 Let's begin by understanding the basics of social media automation.
 
@@ -98,7 +83,7 @@ To automate the logout process, follow these steps:
 
 Here's an example of how to automate the logout process on Twitter:
 
-```
+``` python
 from selenium.webdriver.common.action_chains import ActionChains
 
 # Click on the menu element containing the logout option
@@ -318,5 +303,4 @@ Remember to use your test accounts responsibly and avoid spamming or engaging in
 For more advanced social media automation, consider exploring APIs provided by social media platforms, which may offer more efficient and safer ways to interact with their services.
 
 In the next chapter, we will explore another test automation project, focusing on automating form filling and submission on a website.
-
 

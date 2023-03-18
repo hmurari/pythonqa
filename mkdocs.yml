@@ -64,7 +64,7 @@ nav:
   - Introduction: introduction.md
   - Python Primer: python-primer.md
   - Selenium: selenium.md
-  - eCommerce Automation: ecommerce-automation.md
+  - Website Automation: ecommerce-automation.md
   - Forms Automation: web-forms-automation.md
   - Social Media Automation: social-media-automation.md
   - API Automation: api-automation.md
@@ -72,46 +72,7 @@ nav:
   - Test suites: test-suites.md
   - Best Practices: best-practices.md
   - Advanced: advanced.md
-  - Book: book.md
-
-  - Other:
-      - Introduction to web scraping: scraping/introduction.md
-      - Installing and using Beautiful Soup: scraping/installing.md
-      - Navigating HTML and extracting information: scraping/navigating.md
-      - Project - Scraping news headlines from a news website: scraping/news.md
-
-  - Data I/O:
-      - Accepting user input with input() function: input/input.md
-      - Reading and writing files in Python: input/files.md
-      - CSV and JSON Files: input/csv-json.md
-      - Project - Saving and loading test automation data: input/saving-loading.md
-
-  - Test Suites:
-      - Importance of modular and reusable code: test-suites/modular.md
-      - Creating functions and classes for test automation: test-suites/functions-classes.md
-      - Organizing test cases and test suites: test-suites/organizing.md
-      - Project - Building a test suite for an e-commerce website: test-suites/e-commerce.md
-
-  - Best Practices:
-      - Code organization and structure: best-practices/code-organization.md
-      - Writing maintainable and readable code: best-practices/maintainable.md
-      - Error handling and logging: best-practices/error-handling.md
-      - Continuous integration and testing: best-practices/continuous-integration.md
-
-  - Advanced:
-      - Introduction to headless browser testing: advanced/headless.md
-      - Performance testing with Python: advanced/performance-testing.md
-      - Mobile app testing with Appium: advanced/mobile-testing.md
-      - Exploring other Python testing libraries (pytest, unittest, etc.): advanced/other-testing-libraries.md
-
-  - Project:
-      - Designing a complete test automation project: final-project/design.md
-      - Implementing the project using skills learned throughout the book: final-project/implementation.md
-      - Evaluating and improving the test automation process: final-project/evaluation.md
-
-  - Reference:
-      - Author: reference/author.md
-      - Book: reference/book.md
+  - About: author.md
 
 markdown_extensions:
   - abbr
@@ -172,7 +133,7 @@ extra:
           data: 0
           note: >-
             Thanks for your feedback! Help us improve this page by
-            using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfW7NsiBv1KCH8enZ7OJDHdQDhqY8NtUeQElm9gnRRR9pLPbw/viewform?usp=sf_link" target="_blank" rel="noopener">feedback form</a>.
+            using our <a href="https://forms.gle/gxUdEyFAxT37v6xP6" target="_blank" rel="noopener">feedback form</a>.
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/hmurari/pythonqa

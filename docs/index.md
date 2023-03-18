@@ -62,3 +62,4 @@ By the end of this course, you will have a solid understanding of Python-based t
 **Buy the Book**: <a href="https://pythonqa.org" target="_blank">https://pythonqa.org/book</a>
 
 ---
+

@@ -148,3 +148,4 @@ Remember to always read the API documentation carefully and follow any usage lim
 In this chapter, we learned about web APIs and how to automate them using Python. We covered the basics of making API requests using the Requests library, and how to handle JSON data in Python. We also completed a project that demonstrated how to retrieve weather data using the OpenWeatherMap API.
 
 API automation is a powerful tool for integrating different applications and services. By using web APIs, we can retrieve and manipulate data in a programmatic way, without the need for manual intervention. Python provides many libraries and tools for working with web APIs, making it an ideal language for API automation.
+

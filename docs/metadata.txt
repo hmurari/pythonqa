@@ -1,0 +1,12 @@
+---
+title: QA Automation with Python
+- type: main
+  text: QA Automation with Python
+creator:
+- role: author
+  text: Harsh Murari
+description: A complete web automation course with Python and Selenium
+rights: Commercial
+language: en-US
+stylesheet: epub.css
+cover-image: cover.jpg

@@ -1,4 +1,4 @@
-# Project: Automating an e-Commerce Website
+# Chapter 4: Automating an e-Commerce Website
 
 In this chapter, we will work on our first project to automate a web activity using Python and Selenium. The goal of this project is to build a script that automates the process of searching for a product on an e-commerce website and retrieving the product details.
 
@@ -215,9 +215,10 @@ In this project, we have demonstrated how to automate a simple web activity usin
 
 To learn more about Python, Selenium WebDriver, and Beautiful Soup, you can refer to the following resources:
 
-- [Python Official Documentation](https://docs.python.org/3/)
-- [Selenium WebDriver Documentation](https://www.selenium.dev/documentation/en/)
-- [Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- **Python Official Documentation** available at: [https://docs.python.org/3/](https://docs.python.org/3/)
+- **Selenium WebDriver Documentation** available at: [https://www.selenium.dev/documentation/en/] (https://www.selenium.dev/documentation/en/)
+- **Beautiful Soup Documentation ** available at: [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 These resources provide in-depth information and examples to help you build more complex and robust web automation projects using Python and related libraries.
+
 

@@ -27,3 +27,19 @@ brew install pandoc
 4. Run `make book` command to create `book.epub` file.
 
 
+
+## Mermaid extensions
+
+1. Install the mermaid filter extension
+``` bash
+npm install --global mermaid-filter
+```
+
+2. Run pandoc with the mermaid filter
+``` bash
+pandoc -F mermaid-filter <rest of the command>
+```
+
+Other details available at: https://github.com/raghur/mermaid-filter
+
+

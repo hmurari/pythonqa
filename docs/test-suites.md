@@ -1,9 +1,9 @@
-# Chapter 9: Test Automation Suites
+# Test Automation Suites
 
 In this chapter, we will delve into the core aspects of building and organizing efficient test automation suites for Python applications. As the complexity of software systems grows, it becomes increasingly important to ensure that your application is thoroughly tested and reliable. An effective test automation suite can be a powerful tool in achieving this goal.
 
 
-## 9.1 Modular and Reusable Code
+## Modular and Reusable Code
 
 
 In this section, we will discuss the significance of creating modular and reusable code in test automation suites. Writing modular code involves breaking down your test suite into smaller, self-contained units, while reusable code is designed to be easily shared and utilized across multiple test cases. Both of these principles are essential for building efficient, maintainable, and scalable test automation suites.
@@ -48,7 +48,7 @@ def test_invalid_login():
 
 In this example, we have created a reusable login function that can be used in multiple test cases. This helps us avoid code duplication and makes the test suite more maintainable.
 
-## 9.2 Test Suite Architecture
+## Test Suite Architecture
 
 In this section, we will explore the typical architecture of a test suite, discussing different classes and methods used to organize your test cases. A well-structured test suite helps maintain a clean and organized codebase, making it easier to understand and manage as the application grows.
 
@@ -114,7 +114,7 @@ if __name__ == '__main__':
 
 In this example, we have organized test cases into separate classes for user registration, login, and purchase. Each class contains test methods to verify different scenarios within the respective functionality. The `setUp` and `tearDown` methods are used for initializing and cleaning up the test environment before and after each test method.
 
-## 9.3 Tagging Test Cases
+## Tagging Test Cases
 
 In this section, we will discuss how to organize test suites and tag test cases with labels, such as 'skip' and 'slow running'. Proper organization and tagging make it easier to manage, prioritize, and maintain your test suite, especially as the number of test cases grows.
 
@@ -178,7 +178,7 @@ This command will run only the test cases tagged with 'slow_running'.
 
 
 
-## 9.4 Organizing Test Suites
+## Organizing Test Suites
 
 Besides tagging, you can also organize your test suite by creating subdirectories for different functional areas and placing the corresponding test files in those directories. This approach helps you maintain a clean and structured test suite as your application grows.
 
@@ -204,11 +204,11 @@ tests/
 
 In the next section, we will discuss using decorators as helpers to further enhance your test automation suite.
 
-## 9.6 Decorators and Helper routines
+## Decorators and Helper routines
 
 In this section, we will explore the use of decorators in Python and how they can be employed as helper routines in test automation suites. Decorators are a powerful feature in Python that allow you to modify or extend the behavior of functions or methods without changing their code. By using decorators, you can keep your test code clean and maintainable while adding functionality such as logging, measuring execution time, or modifying input/output.
 
-### 9.6.1 Understanding Decorators
+### Understanding Decorators
 A decorator is a function that takes another function as input and returns a new function that extends or modifies the behavior of the input function. Decorators are applied to functions or methods using the '@' symbol:
 
 ``` python
@@ -218,7 +218,7 @@ def my_function():
 
 ```
 
-### 9.6.2 Creating and Using Decorators
+### Creating and Using Decorators
 
 Let's create a simple decorator that logs the start and end times of a test function:
 
@@ -246,7 +246,7 @@ def my_test_function():
 
 The `log_execution_time` decorator logs the start time, executes the test function, logs the end time, and calculates the execution time. The `@functools.wraps` decorator ensures that the wrapped function retains its original name and attributes.
 
-### 9.6.3 Using Decorators for Test Setups and Teardowns
+### Using Decorators for Test Setups and Teardowns
 
 Decorators can also be used for common setup and teardown tasks, such as creating temporary directories or establishing database connections. Here's an example of a decorator that creates a temporary directory for a test function:
 
@@ -274,7 +274,7 @@ def test_file_operations(tempdir):
 
 In this example, the `with_tempdir` decorator creates a temporary directory before the test function is executed and cleans it up afterward. The temporary directory path is passed to the test function as a keyword argument.
 
-### 9.6.4 Conditional Test Execution
+### Conditional Test Execution
 
 Decorators can be used to conditionally execute test cases based on certain criteria, such as environment variables or configuration settings. For instance, you can create a decorator that skips test cases marked as "slow" if a specific environment variable is set:
 
@@ -300,11 +300,11 @@ By utilizing decorators as helpers in your test automation suite, you can add fu
 
 
 
-## 9.7 Project: A Practical Project Example for a Test Suite
+## Project: A Practical Project Example for a Test Suite
 
 In this section, we will walk through a practical example of a test suite for a simple e-commerce application. This project will demonstrate how to apply the concepts discussed in previous sections, such as modular and reusable code, test suite organization, and the use of decorators.
 
-### 9.7.1 Project Overview
+### 1 Project Overview
 
 The e-commerce application includes the following functionalities:
 
@@ -316,7 +316,7 @@ The e-commerce application includes the following functionalities:
 
 We will create a test suite to verify these functionalities using a modular approach and best practices for organizing test cases.
 
-### 9.7.2 Project Structure
+### Project Structure
 
 The project is organized as follows:
 
@@ -346,7 +346,7 @@ ecommerce_app/
 
 ```
 
-### 9.7.3 Project Setup
+### Project Setup
 
 First, we need to import the necessary libraries and create helper functions in the `helpers.py` file:
 
@@ -388,7 +388,7 @@ class EcommerceAppTestCase(unittest.TestCase):
         self.app_context.pop()
 ```
 
-### 9.7.4 Implementing Test Cases
+### Implementing Test Cases
 
 Next, we will implement test cases for user registration, login, adding/removing products, and placing/canceling orders. Test cases are organized into separate modules based on their functional area:
 
@@ -417,7 +417,7 @@ class TestUserLogin(EcommerceAppTestCase):
 ```
 
 
-### 9.7.5 Running the Test Suite
+### Running the Test Suite
 
 Finally, we can run the test suite using the `unittest` module:
 
@@ -427,11 +427,11 @@ $ python -m unittest discover -s tests -p "test_*.py"
 
 The `-s` option specifies the directory where the test modules are located, and the `-p` option specifies the pattern for test modules. The `discover` command will automatically discover and run all test modules that match the specified pattern.
 
-## 9.8 Test Data Management - Approaches and Examples
+## Test Data Management - Approaches and Examples
 
 In this section, we will discuss various approaches to managing test data and provide examples for each method. Effective test data management is essential for maintaining a clean, organized, and maintainable test suite. It ensures that your test cases remain focused on testing functionality, while test data can be modified or extended without affecting the test code.
 
-### 9.8.1 Embedded Test Data
+### Embedded Test Data
 
 One approach to managing test data is to embed it directly within the test code as variables or data structures. This method can be useful for small amounts of test data, but it may become unwieldy for larger datasets or when test data needs to be shared across multiple test cases.
 
@@ -454,7 +454,7 @@ class TestUserRegistration(unittest.TestCase):
         # Code to test invalid user registration using test_data
 ```
 
-### 9.8.2 External Test Data
+### External Test Data
 
 Another approach is to store test data in external files, such as CSV, JSON, or XML. This method is beneficial when dealing with large datasets, when test data needs to be shared across multiple test cases, or when the test data format is complex.
 
@@ -496,7 +496,7 @@ class TestUserRegistration(unittest.TestCase):
 
 ```
 
-### 9.8.3. Using Test Data Generators
+### Using Test Data Generators
 
 
 Test data generators, such as the Python library `Faker`, can be used to create realistic and diverse test data programmatically. This approach is especially useful when you need to generate a large number of test cases with varying data or when you want to randomize test data.
@@ -526,7 +526,7 @@ class TestUserRegistration(unittest.TestCase):
 
 ```
 
-### 9.8.4. Using Data Factories
+### Using Data Factories
 
 Test data factories, such as `FactoryBoy`, allow you to define templates for creating test data objects. This approach ensures that your test data is consistent and maintainable, while also allowing you to customize specific attributes when necessary.
 
@@ -556,7 +556,7 @@ class TestUserRegistration(unittest.TestCase):
 
 ```
 
-## 9.9 Summary
+## Summary
 
 In this chapter, we have explored various aspects of creating and managing test automation suites in Python. We covered a wide range of topics, including:
 

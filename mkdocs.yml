@@ -1,4 +1,5 @@
 site_name: Python QA Automation
+site_author: Harsh Murari
 site_description: Python QA Automation - A primer on automating the web through Python
 site_url: https://pythonqa.org/
 
@@ -158,3 +159,18 @@ extra_javascript:
 
 plugins:
   - search
+  - with-pdf:
+      cover_subtitle: QA Automation with Python
+      cover_logo: img/cover.png
+      back_cover: true
+      toc_level: 2
+      excludes_children:
+        - 'releases/changelog/:upgrading'
+      two_columns_level: 3
+      render_js: true
+      headless_chrome_path: chrome
+      output_path: ../document.pdf
+      #debug_html: true
+      #verbose: true
+      #show_anchors: true
+      #enabled_if_env: ENABLE_PDF_EXPORT

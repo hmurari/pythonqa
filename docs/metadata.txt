@@ -1,12 +1,27 @@
 ---
-title: QA Automation with Python
+title: 
 - type: main
   text: QA Automation with Python
+- type: subtitle
+  text: A Complete Course to begin your career in Software Testing
 creator:
 - role: author
   text: Harsh Murari
-description: A complete web automation course with Python and Selenium
-rights: Commercial
+description: QA Automation with Python - a Complete Course to begin your career in Software Testing
+rights: Copyright 2023 by Harsh Murari
 language: en-US
-stylesheet: epub.css
-cover-image: cover.jpg
+css: epub.css
+cover-image: img/cover.jpg
+
+	
+section-divs: true
+email-obfuscation: references	
+identifier-prefix: ch1
+css:
+  - epub.css
+split-level: 2
+pdf-engine: xelatex
+ipynb-output: best
+pdf-engine-opts:
+  - '-shell-escape'
+...

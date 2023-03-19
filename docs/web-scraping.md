@@ -1,4 +1,4 @@
-# Chapter 8: Web Scraping
+# Web Scraping
 
 In this chapter, we will learn about web scraping and how to use Python to extract data from websites. We will cover the following topics:
 
@@ -9,7 +9,7 @@ In this chapter, we will learn about web scraping and how to use Python to extra
 - Other tools used for scraping
 - Summary
 
-## 8.1 Introduction to Web Scraping
+## Introduction to Web Scraping
 
 Web scraping is the process of extracting data from websites. With web scraping, we can automate the process of gathering information from websites, saving time and effort.
 
@@ -20,7 +20,7 @@ There are many tools and libraries available for web scraping, but in this chapt
 In the next section, we will learn how to install and use Beautiful Soup.
 
 
-## 8.2 Installing and Using Beautiful Soup
+## Installing and Using Beautiful Soup
 
 Beautiful Soup is a Python library for parsing HTML and XML documents. It is available on PyPI, so we can install it using pip:
 
@@ -67,7 +67,7 @@ In the next section, we will learn how to navigate HTML documents and extract in
 
 
 
-## 8.3 Navigating HTML and Extracting Information
+## Navigating HTML and Extracting Information
 
 
 Once we have a Beautiful Soup object, we can navigate the HTML document and extract the information we need.
@@ -118,7 +118,7 @@ In this example, we have found the first occurrence of an a tag and extracted it
 In the next section, we will apply these techniques to a project where we will scrape news headlines from a news website.
 
 
-## 8.4 Project - Scraping News Headlines from a News Website
+## Project - Scraping News Headlines from a News Website
 
 In this project, we will use Beautiful Soup to scrape news headlines from a news website. We will first identify the HTML structure of the website and then use Beautiful Soup to extract the headlines.
 
@@ -157,7 +157,7 @@ for headline in headlines:
 This project demonstrates how web scraping can be used to extract useful information from websites. However, it is important to note that web scraping may be prohibited by some websites, and it is always a good idea to check the website's terms of service before scraping its content.
 
 
-## 8.5 Other Tools Used for Scraping
+## Other Tools Used for Scraping
 
 While Beautiful Soup is a powerful tool for web scraping, there are other tools and libraries that can also be used. Some of these include:
 
@@ -176,7 +176,7 @@ In the next section, we will summarize what we have learned in this chapter.
 
 
 
-## 8.6 Summary
+## Summary
 
 In this chapter, we have learned about web scraping, which is the process of extracting information from websites. We have covered the following topics:
 

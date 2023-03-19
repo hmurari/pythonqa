@@ -162,3 +162,10 @@ dist/
 *.onnx
 *.pt
 
+# PDF & Epub files
+*.pdf
+*.epub
+*.html
+
+# Site folder
+site/

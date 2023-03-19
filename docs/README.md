@@ -43,3 +43,20 @@ pandoc -F mermaid-filter <rest of the command>
 Other details available at: https://github.com/raghur/mermaid-filter
 
 
+## Pandoc & Latex Information
+
+- The PDF file usually does not look like a book. In order to add title page, back cover page etc., we will be modifying the PDF file template that Pandoc uses. 
+``` bash
+pandoc -D latex > pdf-book-template.tex
+```
+
+- And make a few modifications to it. So it looks like the `pdf-book-template.tex` file provided in this repo .
+
+
+## Book Latex Templates
+
+- https://github.com/Wandmalfarbe/pandoc-latex-template
+
+- https://github.com/wikiti/pandoc-book-template
+
+

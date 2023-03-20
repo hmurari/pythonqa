@@ -1,4 +1,4 @@
-# Preface
+# Preface {epub:type=prologue}
 
 Discover the power of Python in the world of test automation with this hands-on course designed specifically for beginners. Learn how to automate web activities, work with web APIs, and scrape websites with Python's extensive library support. Engage in practical projects that reinforce your skills and prepare you for real-world test automation scenarios.
 
@@ -35,8 +35,6 @@ By the end of this course, you will have a solid understanding of Python-based t
 
 **Harsh Murari** is Software Developer, entrepreneur, husband and a Dad based in Denver, CO. He is founder and CTO at [Visionify.ai](https://visionify.ai), that focuses on workplace safety through Vision AI. 
 
-He is passionate about Python programming, Automation, Machine Learning, Computer Vision and Embedded Programming.
-
-You can follow him on twitter at [@hmurari](https://twitter.com/hmurari). 
+He is passionate about Python programming, Automation, Machine Learning, Computer Vision and Embedded Programming. You can follow him on twitter at [@hmurari](https://twitter.com/hmurari). 
 
 

@@ -1,8 +1,8 @@
-# Chapter 1: Introduction
+# Introduction
 
 In this chapter, we will go over the basics of test automation and why Python is an excellent choice for it. We will also introduce popular Python libraries used for test automation, as well as key concepts like web automation, web APIs, and web scraping. Finally, an overview of the book will outline what students can expect to learn in each chapter and the hands-on projects they'll be working on.
 
-## 1.1 What is Test Automation?
+## What is Test Automation?
 
 Test automation is the process of using software tools and scripts to automatically execute tests, compare the actual results with expected results, and report any discrepancies or errors. This approach to testing reduces the need for manual intervention, leading to increased efficiency and reliability in the software development process.
 
@@ -38,7 +38,7 @@ def test_add():
 
 In the following sections, we will focus on using Python for various types of test automation, including web automation, web API testing, and web scraping.
 
-## 1.2 Why Python for Test Automation?
+## Why Python for Test Automation?
 
 Python has become a popular choice for test automation due to its many advantages. Here, we'll discuss some of the reasons why Python is well-suited for test automation:
 
@@ -79,7 +79,7 @@ driver.quit()
 In this example, we used Python and Selenium to automate a simple web browsing task, demonstrating how easy it is to get started with Python-based test automation. As you progress through this book, you'll learn more about Python's powerful test automation capabilities and how to apply them to a variety of tasks and projects.
 
 
-## 1.3 Popular Python Libraries for Test Automation
+## Popular Python Libraries for Test Automation
 
 Python's extensive library ecosystem is one of the key reasons it is a popular choice for test automation. There are numerous libraries available to help you create and maintain test scripts, automate web browsers, interact with APIs, and more. Here, we'll introduce some of the most popular Python libraries used for test automation:
 
@@ -99,7 +99,7 @@ These popular Python libraries provide a strong foundation for test automation t
 
 
 
-## 1.4 Web Automation, Web APIs, and Web Scraping
+## Web Automation, Web APIs, and Web Scraping
 
 In this section, we'll provide a brief introduction to three key concepts in Python-based test automation: web automation, web APIs, and web scraping. These concepts are essential for understanding the various tasks and projects you'll encounter throughout this book.
 
@@ -151,7 +151,7 @@ print(data)
 By understanding these key concepts, you'll be well-equipped to tackle the various test automation tasks and projects presented in this book. As you work through the chapters, you'll gain hands-on experience in web automation, web API testing, and web scraping using Python and its powerful libraries.
 
 
-## 1.5  Setting up your Python Environment for Test Automation
+## Setting up your Python Environment for Test Automation
 
 Before diving into the test automation projects, it's essential to set up your Python environment. In this section, we'll walk you through the steps to install Python, create a virtual environment, and install the necessary libraries for test automation.
 
@@ -196,7 +196,7 @@ This would install most of the common required libraries used for test automatio
 1. **Chromedriver Executable**: Selenium requires a driver to control the web browser. For this example, we'll use the Chrome browser. To install the Chromedriver executable, visit the official Chromedriver website (https://chromedriver.chromium.org/downloads) and download the latest version for your operating system. Once downloaded, extract the executable and place it in your project folder. This step is not required if you are using Firefox for web automation.
 
 
-## 1.6 Summary
+## Summary
 
 In this introductory chapter, we provided an overview of test automation and its benefits, explained why Python is a popular choice for test automation tasks, and introduced essential concepts such as web automation, web APIs, and web scraping. We also gave a brief overview of the popular Python libraries used in test automation, including Selenium, Requests, Beautiful Soup, PyTest, unittest, and Robot Framework.
 

@@ -48,7 +48,6 @@ $if(CJKmainfont)$
 \PassOptionsToPackage{space}{xeCJK}
 $endif$
 %
-
 \documentclass[
 $if(fontsize)$
   $fontsize$,
@@ -863,7 +862,7 @@ $else$
   \ihead*{$if(header-left)$$header-left$$else$$title$$endif$}
   \chead*{$if(header-center)$$header-center$$else$$endif$}
   \ohead*{$if(header-right)$$header-right$$else$$date$$endif$}
-  % \ifoot*{$if(footer-left)$$footer-left$$else$$for(author)$$author$$sep$, $endfor$$endif$}
+  \ifoot*{$if(footer-left)$$footer-left$$else$$for(author)$$author$$sep$, $endfor$$endif$}
   \cfoot*{$if(footer-center)$$footer-center$$else$$endif$}
   \ofoot*{$if(footer-right)$$footer-right$$else$\thepage$endif$}
   \addtokomafont{pageheadfoot}{\upshape}
@@ -894,48 +893,76 @@ $endif$
 %%
 
 \begin{document}
+
 %%
 %% begin titlepage
 %%
-
 $if(beamer)$
 $else$
 $if(titlepage)$
 \begin{titlepage}
 $if(titlepage-background)$
-\thispagestyle{empty}
-% \noindent\makebox[\paperwidth]{\includegraphics[width=\paperwidth]{$titlepage-background$}}
-\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=False]{$titlepage-background$}};
+\newgeometry{top=2cm, right=4cm, bottom=3cm, left=4cm}
+$else$
+\newgeometry{left=6cm}
+$endif$
+$if(titlepage-color)$
+\definecolor{titlepage-color}{HTML}{$titlepage-color$}
+\newpagecolor{titlepage-color}\afterpage{\restorepagecolor}
+$endif$
+$if(titlepage-background)$
+\tikz[remember picture,overlay] \node[inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{$titlepage-background$}};
 $endif$
 \newcommand{\colorRule}[3][black]{\textcolor[HTML]{#1}{\rule{#2}{#3}}}
+\begin{flushleft}
+\noindent
+\\[-1em]
+\color[HTML]{$if(titlepage-text-color)$$titlepage-text-color$$else$5F5F5F$endif$}
+\makebox[0pt][l]{\colorRule[$if(titlepage-rule-color)$$titlepage-rule-color$$else$435488$endif$]{1.3\textwidth}{$if(titlepage-rule-height)$$titlepage-rule-height$$else$4$endif$pt}}
+\par
+\noindent
 
+$if(titlepage-background)$
+% The titlepage with a background image has other text spacing and text size
+{
+  \setstretch{2}
+  \vfill
+  \vskip -8em
+  \noindent {\huge \textbf{\textsf{$title$}}}
+  $if(subtitle)$
+  \vskip 1em
+  {\Large \textsf{$subtitle$}}
+  $endif$
+  \vskip 2em
+  \noindent {\Large \textsf{$for(author)$$author$$sep$, $endfor$} \vskip 0.6em \textsf{$date$}}
+  \vfill
+}
+$else$
+{
+  \setstretch{1.4}
+  \vfill
+  \noindent {\huge \textbf{\textsf{$title$}}}
+  $if(subtitle)$
+  \vskip 1em
+  {\Large \textsf{$subtitle$}}
+  $endif$
+  \vskip 2em
+  \noindent {\Large \textsf{$for(author)$$author$$sep$, $endfor$}}
+  \vfill
+}
+$endif$
 
+$if(titlepage-logo)$
+\noindent
+\includegraphics[width=$if(logo-width)$$logo-width$$else$35mm$endif$, left]{$titlepage-logo$}
+$endif$
 
-% \begin{center}
-    \newpage
-    \thispagestyle{empty}
-
-    \vspace*{5cm}
-        
-    \Huge
-    \textbf{$title$}
-        
-    \vspace{0.5cm}
-    \LARGE
-    {$subtitle$}
-        
-    \vspace{1.5cm}
-        
-    \textbf{$for(author)$$author$$sep$, $endfor$}
-        
-    \vfill
-
-% \end{center}
-
+$if(titlepage-background)$
+$else$
+\textsf{$date$}
+$endif$
+\end{flushleft}
 \end{titlepage}
-
-\newpage
-
 \restoregeometry
 \pagenumbering{arabic} 
 $endif$
@@ -998,8 +1025,6 @@ $endif$
 }
 $endif$
 $endif$
-
-
 $if(lof)$
 \listoffigures
 $endif$
@@ -1052,10 +1077,4 @@ $for(include-after)$
 $include-after$
 
 $endfor$
-
-$if(backpage)$
-\thispagestyle{empty}
-\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=False]{$backpage-background$}};
-$endif$
-
 \end{document}
